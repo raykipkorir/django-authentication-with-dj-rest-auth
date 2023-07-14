@@ -19,8 +19,10 @@ def callback(request):
     """Callback"""
     code = request.GET.get("code")
 
-    # exchange code with authorization server for access token
+    # exchange code with authorization server for access token and ID token
     res = requests.post("http://localhost:8000/api/google/", data={"code": code}, timeout=30)
+
+    # return ID token to the user which will be used by the user in subsequent requests to verify his identity
     return Response(res.json())
 
 

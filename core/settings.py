@@ -138,7 +138,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 SITE_ID = 1
-CALLBACK_URL = "https://d708-102-215-76-91.ngrok-free.app/api/callback/"
+CALLBACK_URL = "https://fd47-102-215-76-91.ngrok-free.app/api/callback/"
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
